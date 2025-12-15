@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-12">
-        >
+        
           <h2 className="text-4xl font-bold text-black mb-4">
             What Makes Us Different
           </h2>

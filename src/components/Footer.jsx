@@ -7,7 +7,7 @@ const { FiFacebook, FiInstagram, FiMapPin, FiPhone } = FiIcons;
 const Footer = () => {
 
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-black text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo and Description */}
@@ -22,7 +22,7 @@ const Footer = () => {
             <p className="text-gray-300 leading-relaxed mb-6">
               Your trusted dental studio in South Tampa, crafting healthy, beautiful smiles with exceptional comprehensive dentistry and a personal touch.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="#"
                 className="w-10 h-10 bg-[#D3BEA2] rounded-full flex items-center justify-center hover:bg-[#c4ad8f] transition-colors"
@@ -35,7 +35,7 @@ const Footer = () => {
               >
                 <SafeIcon icon={FiInstagram} className="w-5 h-5 text-black" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Info */}
@@ -64,14 +64,14 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             © 2025 Upshaw Dental Studio. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-[#D3BEA2] text-sm transition-colors">
               Privacy Policy
             </a>
             <a href="#" className="text-gray-400 hover:text-[#D3BEA2] text-sm transition-colors">
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

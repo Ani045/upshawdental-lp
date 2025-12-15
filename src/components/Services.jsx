@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
@@ -7,6 +6,8 @@ const { FiChevronLeft, FiChevronRight } = FiIcons;
 
 const Services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(2);
+  const [maxSlides, setMaxSlides] = useState(1);
   
   const services = [
     {
@@ -81,8 +82,19 @@ const Services = () => {
     }
   ];
 
-  const itemsPerPage = window.innerWidth >= 768 ? 3 : 2;
-  const maxSlides = Math.ceil(services.length / itemsPerPage);
+  useEffect(() => {
+    const updateSliderSettings = () => {
+      const items = window.innerWidth >= 768 ? 3 : 2;
+      setItemsPerPage(items);
+      setMaxSlides(Math.ceil(services.length / items));
+      setCurrentSlide(0); // Reset to first slide on resize
+    };
+
+    updateSliderSettings();
+    window.addEventListener('resize', updateSliderSettings);
+    
+    return () => window.removeEventListener('resize', updateSliderSettings);
+  }, [services.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % maxSlides);
@@ -140,33 +152,33 @@ const Services = () => {
         </div>
 
         {/* Mobile Slider - 2 columns */}
-        <div className="md:hidden relative">
+        <div className="md:hidden relative mx-6">
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-300 ease-in-out"
-              animate={{ x: `${-currentSlide * 100}%` }}
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {Array.from({ length: maxSlides }, (_, slideIndex) => (
-                <div key={slideIndex} className="w-full flex-shrink-0 grid grid-cols-2 gap-4">
+                <div key={slideIndex} className="w-full flex-shrink-0 grid grid-cols-2 gap-2">
                   {services
                     .slice(slideIndex * itemsPerPage, (slideIndex + 1) * itemsPerPage)
                     .map((service) => (
                     <div
                       key={service.title}
-                      className="rounded-xl hover:shadow-md transition-all duration-300 border border-gray-200/50 overflow-hidden hover:border-gray-300"
+                      className="rounded-lg overflow-hidden border border-gray-200/50 hover:border-gray-300 transition-all duration-300"
                     >
-                      <div className="p-3">
-                        <div className="w-16 h-16 rounded-lg overflow-hidden mb-3 mx-auto">
-                          <img
-                            src={service.image}
-                            alt={service.title}
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <h3 className="text-sm font-semibold text-black mb-2 text-center">
+                      <div className="w-full h-24 overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-2">
+                        <h3 className="text-xs font-semibold text-black mb-1 text-center">
                           {service.title}
                         </h3>
-                        <p className="text-gray-600 text-xs leading-relaxed text-center">
+                        <p className="text-gray-600 text-xs leading-tight text-center">
                           {service.description}
                         </p>
                       </div>
@@ -180,15 +192,15 @@ const Services = () => {
           {/* Slider Controls */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-10"
+            className="absolute -left-4 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-20"
           >
-            <SafeIcon icon={FiChevronLeft} className="w-5 h-5 text-gray-600" />
+            <SafeIcon icon={FiChevronLeft} className="w-4 h-4 text-gray-600" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-10"
+            className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-20"
           >
-            <SafeIcon icon={FiChevronRight} className="w-5 h-5 text-gray-600" />
+            <SafeIcon icon={FiChevronRight} className="w-4 h-4 text-gray-600" />
           </button>
 
           {/* Slider Dots */}

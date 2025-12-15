@@ -1,5 +1,5 @@
 // Infographic component
-import { motion } from 'framer-motion';
+import React from 'react';
 
 const Infographic = () => {
   const stats = [

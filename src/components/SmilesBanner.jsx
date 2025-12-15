@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 
 const SmilesBanner = () => {
   return (
@@ -11,7 +10,7 @@ const SmilesBanner = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-12">
-        >
+        
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             Over <span className="text-[#D3BEA2]">1 Million+</span> Smiles
           </h2>
