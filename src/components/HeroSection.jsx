@@ -33,7 +33,7 @@ const HeroSection = () => {
                 Your Trusted Dental Studio in{' '}
                 <span className="text-[#D3BEA2]">South Tampa</span>
               </h1>
-              
+
               <p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const HeroSection = () => {
                   <p className="text-sm text-gray-600">Tailored treatment plans for every patient</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <SafeIcon icon={FiSettings} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
                 <div>
@@ -66,7 +66,7 @@ const HeroSection = () => {
                   <p className="text-sm text-gray-600">Modern equipment and techniques</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <SafeIcon icon={FiShield} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
                 <div>
@@ -74,7 +74,7 @@ const HeroSection = () => {
                   <p className="text-sm text-gray-600">Relaxing environment and gentle care</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <SafeIcon icon={FiClock} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
                 <div>
@@ -117,7 +117,7 @@ const HeroSection = () => {
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                
+
                 {/* Image Overlay Content */}
                 {/* <div className="absolute bottom-4 left-4 right-4">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3">
@@ -141,13 +141,21 @@ const HeroSection = () => {
                   <h3 className="text-lg font-bold text-black mb-1">Schedule Your Visit</h3>
                   <p className="text-xs text-gray-600">Get started with exceptional dental care</p>
                 </div>
-                
-                <form className="space-y-3">
+
+                <form
+                  acceptCharset="UTF-8"
+                  action="https://app.formester.com/forms/q9ZS58CbU/submissions"
+                  method="POST"
+                  className="space-y-3"
+                >
+                  <input type="hidden" name="_redirect" value="thankyou.html" />
                   <div className="grid grid-cols-3 gap-3">
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">First Name</label>
                       <input
                         type="text"
+                        name="first_name"
+                        required
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#D3BEA2] focus:border-transparent text-sm"
                         placeholder="First name"
                       />
@@ -156,6 +164,8 @@ const HeroSection = () => {
                       <label className="block text-xs font-medium text-gray-700 mb-1">Last Name</label>
                       <input
                         type="text"
+                        name="last_name"
+                        required
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#D3BEA2] focus:border-transparent text-sm"
                         placeholder="Last name"
                       />
@@ -164,6 +174,8 @@ const HeroSection = () => {
                       <label className="block text-xs font-medium text-gray-700 mb-1">Phone</label>
                       <input
                         type="tel"
+                        name="phone"
+                        required
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#D3BEA2] focus:border-transparent text-sm"
                         placeholder="(813) 555-0123"
                       />
@@ -173,6 +185,8 @@ const HeroSection = () => {
                     <label className="block text-xs font-medium text-gray-700 mb-1">Email</label>
                     <input
                       type="email"
+                      name="email"
+                      required
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#D3BEA2] focus:border-transparent text-sm"
                       placeholder="your@email.com"
                     />
@@ -181,12 +195,13 @@ const HeroSection = () => {
                     <label className="block text-xs font-medium text-gray-700 mb-1">Message</label>
                     <textarea
                       rows="2"
+                      name="message"
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#D3BEA2] focus:border-transparent text-sm"
                       placeholder="Tell us about your dental needs..."
                     ></textarea>
                   </div>
                   <button
-                    type="button"
+                    type="submit"
                     className="w-full bg-[#D3BEA2] text-black px-6 py-2.5 rounded-lg font-semibold hover:bg-[#c4ad8f] transition-colors text-sm"
                   >
                     Schedule Appointment

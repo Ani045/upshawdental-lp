@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Upshaw Dental Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #F8F6F3 0%, #ffffff 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      background: white;
+      padding: 60px 40px;
+      border-radius: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(211, 190, 162, 0.3);
+    }
+    
+    .checkmark-circle {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #D3BEA2 0%, #c4ad8f 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      animation: scaleIn 0.5s ease-out;
+    }
+    
+    .checkmark {
+      width: 50px;
+      height: 50px;
+      stroke: white;
+      stroke-width: 3;
+      fill: none;
+      animation: drawCheck 0.6s ease-out 0.3s forwards;
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+    }
+    
+    @keyframes scaleIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes drawCheck {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    
+    h1 {
+      color: #000000;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    
+    .highlight {
+      color: #D3BEA2;
+    }
+    
+    p {
+      color: #6b7280;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #D3BEA2;
+      color: #000000;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background: #c4ad8f;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(211, 190, 162, 0.4);
+    }
+    
+    .btn svg {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .contact-info {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(211, 190, 162, 0.3);
+    }
+    
+    .contact-info p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    
+    .contact-link {
+      color: #D3BEA2;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-link:hover {
+      color: #c4ad8f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="checkmark-circle">
+      <svg class="checkmark" viewBox="0 0 24 24">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    
+    <h1>Thank <span class="highlight">You!</span></h1>
+    
+    <p>
+      Your appointment request has been submitted successfully. 
+      Our team at Upshaw Dental Studio will contact you shortly to confirm your appointment.
+    </p>
+    
+    <a href="index.html" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Back to Home
+    </a>
+    
+    <div class="contact-info">
+      <p>
+        Questions? Call us at 
+        <a href="tel:813-582-4006" class="contact-link">813-582-4006</a>
+      </p>
+      <p>We look forward to welcoming you!</p>
+    </div>
+  </div>
+</body>
+</html>

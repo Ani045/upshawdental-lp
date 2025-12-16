@@ -8,7 +8,7 @@ const Services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(2);
   const [maxSlides, setMaxSlides] = useState(1);
-  
+
   const services = [
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796218/Gemini_Generated_Image_ctx6p5ctx6p5ctx6_lhbmto.png',
@@ -92,7 +92,7 @@ const Services = () => {
 
     updateSliderSettings();
     window.addEventListener('resize', updateSliderSettings);
-    
+
     return () => window.removeEventListener('resize', updateSliderSettings);
   }, [services.length]);
 
@@ -105,22 +105,22 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-12 bg-gradient-to-br from-[#F8F6F3] to-white">
+    <section id="services" className="py-8 bg-gradient-to-br from-[#F8F6F3] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
-          <h2 className="text-4xl font-bold text-black mb-4">
+          <h2 className="text-4xl font-bold text-black mb-2">
             Our Dental Services
           </h2>
         </div>
 
         {/* Desktop Grid - 3 columns */}
-        <div className="hidden md:grid md:grid-cols-3 gap-6">
+        <div className="hidden md:grid md:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={service.title}
@@ -128,10 +128,10 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
-              className="rounded-xl hover:shadow-md transition-all duration-300 border border-gray-200/50 overflow-hidden group hover:border-gray-300"
+              className="rounded-xl hover:shadow-md transition-all duration-300 border border-[#D1C4B2]/30 overflow-hidden group hover:border-[#D1C4B2] bg-white"
             >
-              <div className="flex items-center p-4">
-                <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 mr-4 group-hover:scale-105 transition-transform duration-300">
+              <div className="flex items-center p-3">
+                <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 mr-4 group-hover:scale-105 transition-transform duration-300">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -139,10 +139,10 @@ const Services = () => {
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-black mb-2">
+                  <h3 className="text-base font-semibold text-black mb-1">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-snug">
                     {service.description}
                   </p>
                 </div>
@@ -152,7 +152,7 @@ const Services = () => {
         </div>
 
         {/* Mobile Slider - 2 columns */}
-        <div className="md:hidden relative mx-6">
+        <div className="md:hidden relative mx-4">
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-300 ease-in-out"
@@ -163,27 +163,27 @@ const Services = () => {
                   {services
                     .slice(slideIndex * itemsPerPage, (slideIndex + 1) * itemsPerPage)
                     .map((service) => (
-                    <div
-                      key={service.title}
-                      className="rounded-lg overflow-hidden border border-gray-200/50 hover:border-gray-300 transition-all duration-300"
-                    >
-                      <div className="w-full h-24 overflow-hidden">
-                        <img
-                          src={service.image}
-                          alt={service.title}
-                          className="w-full h-full object-cover"
-                        />
+                      <div
+                        key={service.title}
+                        className="rounded-lg overflow-hidden border border-gray-400 hover:border-gray-600 transition-all duration-300 bg-white"
+                      >
+                        <div className="w-full h-20 overflow-hidden">
+                          <img
+                            src={service.image}
+                            alt={service.title}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="p-1.5">
+                          <h3 className="text-xs font-semibold text-black mb-0.5 text-center">
+                            {service.title}
+                          </h3>
+                          <p className="text-gray-600 text-xs leading-tight text-center">
+                            {service.description}
+                          </p>
+                        </div>
                       </div>
-                      <div className="p-2">
-                        <h3 className="text-xs font-semibold text-black mb-1 text-center">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-600 text-xs leading-tight text-center">
-                          {service.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
               ))}
             </div>
@@ -204,14 +204,13 @@ const Services = () => {
           </button>
 
           {/* Slider Dots */}
-          <div className="flex justify-center mt-6 space-x-2">
+          <div className="flex justify-center mt-4 space-x-2">
             {Array.from({ length: maxSlides }, (_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentSlide ? 'bg-[#D3BEA2]' : 'bg-gray-300'
-                }`}
+                className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? 'bg-[#D3BEA2]' : 'bg-gray-300'
+                  }`}
               />
             ))}
           </div>
@@ -222,19 +221,19 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-center mt-12 p-6 bg-[#D3BEA2] rounded-xl"
+          className="text-center mt-8 p-4 bg-[#D3BEA2] rounded-xl"
         >
           <p className="text-lg text-black mb-4">
             👉 Not sure which service you need?
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-            <button 
+            <button
               onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-black text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
             >
               Book Consultation
             </button>
-            <a 
+            <a
               href="tel:813-582-4006"
               className="bg-white text-black px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-100 transition-colors border border-gray-300"
             >
