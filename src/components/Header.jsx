@@ -22,7 +22,7 @@ const Header = () => {
               onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-[#D3BEA2] text-black px-6 py-2 rounded-lg font-medium hover:bg-[#c4ad8f] transition-colors"
             >
-              Book Appointment
+              Book An Appointment
             </button>
           </div>
         </div>

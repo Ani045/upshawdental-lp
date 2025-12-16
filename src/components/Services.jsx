@@ -12,7 +12,7 @@ const Services = () => {
   const services = [
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796218/Gemini_Generated_Image_ctx6p5ctx6p5ctx6_lhbmto.png',
-      title: 'Preventative Dentistry',
+      title: 'Preventive Dentistry',
       description: 'Exams, cleanings, periodontal therapy, custom mouthguards'
     },
     {
@@ -73,7 +73,7 @@ const Services = () => {
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a5b1_AdobeStock_407976541.webp',
       title: 'Sleep Apnea Solutions',
-      description: 'Better sleep through dental treatment'
+      description: 'Better sleep through dental care'
     },
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797608/teeth-whitening_zzwlp2.jpg',
@@ -231,7 +231,7 @@ const Services = () => {
               onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-black text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
             >
-              Book Consultation
+              Book An Consultation
             </button>
             <a
               href="tel:813-582-4006"

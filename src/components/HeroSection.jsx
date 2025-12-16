@@ -40,7 +40,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-2xl text-gray-600 leading-relaxed"
               >
-                Exceptional comprehensive dentistry with a personal touch
+                Exceptional, comprehensive dentistry with a personal touch
               </p>
             </div>
 
@@ -49,37 +49,37 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="space-y-4"
+              className="grid grid-cols-2 gap-3 md:grid-cols-1 md:gap-4"
             >
-              <div className="flex items-start space-x-4">
-                <SafeIcon icon={FiHeart} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
+              <div className="flex items-start space-x-2 md:space-x-4">
+                <SafeIcon icon={FiHeart} className="w-5 h-5 md:w-6 md:h-6 text-[#D3BEA2] mt-0.5 md:mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-black mb-1">Personalized Care</h4>
-                  <p className="text-sm text-gray-600">Tailored treatment plans for every patient</p>
+                  <h4 className="font-semibold text-black text-sm md:text-base mb-0.5 md:mb-1">Personalized Care</h4>
+                  <p className="hidden md:block text-sm text-gray-600">Tailored treatment plans for every patient</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <SafeIcon icon={FiSettings} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
+              <div className="flex items-start space-x-2 md:space-x-4">
+                <SafeIcon icon={FiSettings} className="w-5 h-5 md:w-6 md:h-6 text-[#D3BEA2] mt-0.5 md:mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-black mb-1">State-of-the-Art Technology</h4>
-                  <p className="text-sm text-gray-600">Modern equipment and techniques</p>
+                  <h4 className="font-semibold text-black text-sm md:text-base mb-0.5 md:mb-1">State-of-the-Art Technology</h4>
+                  <p className="hidden md:block text-sm text-gray-600">Modern equipment and techniques</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <SafeIcon icon={FiShield} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
+              <div className="flex items-start space-x-2 md:space-x-4">
+                <SafeIcon icon={FiShield} className="w-5 h-5 md:w-6 md:h-6 text-[#D3BEA2] mt-0.5 md:mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-black mb-1">Comfort-First Experience</h4>
-                  <p className="text-sm text-gray-600">Relaxing environment and gentle care</p>
+                  <h4 className="font-semibold text-black text-sm md:text-base mb-0.5 md:mb-1">Comfort-First Experience</h4>
+                  <p className="hidden md:block text-sm text-gray-600">Relaxing environment and gentle care</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <SafeIcon icon={FiClock} className="w-6 h-6 text-[#D3BEA2] mt-1 flex-shrink-0" />
+              <div className="flex items-start space-x-2 md:space-x-4">
+                <SafeIcon icon={FiClock} className="w-5 h-5 md:w-6 md:h-6 text-[#D3BEA2] mt-0.5 md:mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-black mb-1">25+ Years Experience</h4>
-                  <p className="text-sm text-gray-600">Decades of trusted dental excellence</p>
+                  <h4 className="font-semibold text-black text-sm md:text-base mb-0.5 md:mb-1">25+ Years Experience</h4>
+                  <p className="hidden md:block text-sm text-gray-600">Decades of trusted dental excellence</p>
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@ const HeroSection = () => {
                       <input
                         type="text"
                         name="last_name"
-                        required
+
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#D3BEA2] focus:border-transparent text-sm"
                         placeholder="Last name"
                       />

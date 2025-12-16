@@ -10,9 +10,10 @@ const SmilesBanner = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-12">
-        
+
+
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            Over <span className="text-[#D3BEA2]">Thousands +</span> Smiles
+            Over <span className="text-[#D3BEA2]">5,000+ Smiles </span> Transformed
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Transforming lives, one smile at a time
@@ -34,7 +35,7 @@ const SmilesBanner = () => {
               className="w-full h-64 md:h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-            
+
             {/* Overlay text - hidden on mobile */}
             <div className="hidden md:block absolute bottom-8 left-8 right-8 text-center">
               <div

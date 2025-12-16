@@ -11,7 +11,7 @@ const AboutDentist = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-12">
-        
+
           <h2 className="text-4xl font-bold text-black mb-4">
             Meet Dr. Maria Upshaw
           </h2>
@@ -44,14 +44,14 @@ const AboutDentist = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <iframe 
-                  width="100%" 
-                  height="315" 
-                  src="https://www.youtube.com/embed/xzmWetPm69c?si=dxhUAjmN8PKcDmWl" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/xzmWetPm69c?si=dxhUAjmN8PKcDmWl"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                   className="rounded-2xl"
                 ></iframe>
@@ -73,10 +73,10 @@ const AboutDentist = () => {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Dr. Maria Upshaw brings over 25 years of experience in comprehensive and cosmetic dentistry. She's dedicated to providing gentle, personalized dental care while creating a relaxed, welcoming environment for every patient.
               </p>
-              
+
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  At Upshaw Dental Studio, our primary goal as your dental studio in South Tampa is to prioritize the needs and comfort of our patients. We understand that visiting the dentist can be intimidating, and that's why we make it a priority to create a relaxed and welcoming environment.
+                  At Upshaw Dental Studio, our primary goal as your dental home in South Tampa is to prioritize your comfort and needs. We understand that visiting the dentist can be intimidating, and that's why we make it a priority to create a relaxed and welcoming environment.
                 </p>
                 <p>
                   From the moment you arrive, our friendly team will be there to greet you and guide you through your dental journey. We want to ensure that your visit is as comfortable and enjoyable as possible, putting any worries or fears at ease.
