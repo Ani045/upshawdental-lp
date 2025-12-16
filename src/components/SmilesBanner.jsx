@@ -12,7 +12,7 @@ const SmilesBanner = () => {
           className="text-center mb-12">
         
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            Over <span className="text-[#D3BEA2]">1 Million+</span> Smiles
+            Over <span className="text-[#D3BEA2]">Thousands +</span> Smiles
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Transforming lives, one smile at a time

@@ -8,11 +8,11 @@ const HeroSection = () => {
   return (
     <section id="home" className="pt-6  bg-white relative overflow-hidden">
       {/* Background Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-32 h-32 bg-[#D3BEA2] rounded-full opacity-10"></div>
         <div className="absolute bottom-20 left-10 w-24 h-24 bg-[#D3BEA2] rounded-full opacity-15"></div>
         <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-[#D3BEA2] rounded-full opacity-20"></div>
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
