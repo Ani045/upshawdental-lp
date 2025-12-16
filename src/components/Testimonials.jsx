@@ -6,7 +6,8 @@ const { FiStar, FiChevronLeft, FiChevronRight } = FiIcons;
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+  const [testimonialSlide, setTestimonialSlide] = useState(0);
+
   const testimonials = [
     {
       name: 'Andrew H.',
@@ -69,13 +70,14 @@ const Testimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-12">
-        
+
           <h2 className="text-4xl font-bold text-black mb-4">
             What Our Patients Are Saying
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-6 mb-12">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.name}
@@ -108,6 +110,68 @@ const Testimonials = () => {
           ))}
         </div>
 
+        {/* Mobile Testimonials Slider */}
+        <div className="md:hidden relative mb-12 mx-4">
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-300 ease-in-out"
+              style={{ transform: `translateX(-${testimonialSlide * 100}%)` }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div key={testimonial.name} className="w-full flex-shrink-0 px-2">
+                  <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
+                    <div className="flex items-center mb-3">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <SafeIcon key={i} icon={FiStar} className="w-4 h-4 text-[#D3BEA2] fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-gray-700 leading-relaxed mb-4 italic text-sm">
+                      "{testimonial.text}"
+                    </p>
+                    <div className="flex items-center">
+                      <div className="w-10 h-10 bg-[#D3BEA2] rounded-full flex items-center justify-center mr-3">
+                        <span className="text-black font-semibold">
+                          {testimonial.name.charAt(0)}
+                        </span>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-black text-sm">{testimonial.name}</div>
+                        <div className="text-xs text-gray-500">Verified Patient</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Testimonial Slider Controls */}
+          <button
+            onClick={() => setTestimonialSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
+            className="absolute -left-2 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-10"
+          >
+            <SafeIcon icon={FiChevronLeft} className="w-4 h-4 text-gray-600" />
+          </button>
+          <button
+            onClick={() => setTestimonialSlide((prev) => (prev + 1) % testimonials.length)}
+            className="absolute -right-2 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-10"
+          >
+            <SafeIcon icon={FiChevronRight} className="w-4 h-4 text-gray-600" />
+          </button>
+
+          {/* Testimonial Slider Dots */}
+          <div className="flex justify-center mt-4 space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setTestimonialSlide(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${index === testimonialSlide ? 'bg-[#D3BEA2]' : 'bg-gray-300'
+                  }`}
+              />
+            ))}
+          </div>
+        </div>
+
         {/* Treatment Results Gallery */}
         <div
           initial={{ opacity: 0, y: 30 }}
@@ -117,7 +181,7 @@ const Testimonials = () => {
           className="text-center"
         >
           <h3 className="text-2xl font-bold text-black mb-8">See Our Treatment Results</h3>
-          
+
           {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {treatmentResults.map((result, index) => (
@@ -137,7 +201,7 @@ const Testimonials = () => {
           {/* Mobile Slider */}
           <div className="md:hidden relative">
             <div className="overflow-hidden rounded-xl">
-              <div 
+              <div
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
@@ -178,9 +242,8 @@ const Testimonials = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentSlide ? 'bg-[#D3BEA2]' : 'bg-gray-300'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? 'bg-[#D3BEA2]' : 'bg-gray-300'
+                    }`}
                 />
               ))}
             </div>
@@ -196,12 +259,18 @@ const Testimonials = () => {
             <p className="text-gray-600 mb-6">
               Start your journey to a healthier, more beautiful smile today
             </p>
-            <button
-              onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-[#D3BEA2] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#c4ad8f] transition-colors text-lg"
+            <a
+              href="tel:813-582-4006"
+              className="inline-flex items-center bg-[#D3BEA2] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#c4ad8f] transition-colors text-lg"
             >
-              Get Started Today
-            </button>
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Call Now: (813) 582-4006
+            </a>
+            <p className="text-sm text-gray-500 mt-4">
+              Same-day emergency slots available
+            </p>
           </div>
         </div>
       </div>

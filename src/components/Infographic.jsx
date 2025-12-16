@@ -10,8 +10,8 @@ const Infographic = () => {
       description: 'Trusted families'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765793680/Gemini_Generated_Image_u6lfyhu6lfyhu6lf_gp4xny.png',
-      number: '15+',
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a61f_FotoBoho_003.webp',
+      number: '25+',
       label: 'Years Experience',
       description: 'Expert dental care'
     },

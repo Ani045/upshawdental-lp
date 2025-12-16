@@ -78,7 +78,7 @@ const HeroSection = () => {
               <div className="flex items-start space-x-2 md:space-x-4">
                 <SafeIcon icon={FiClock} className="w-5 h-5 md:w-6 md:h-6 text-[#D3BEA2] mt-0.5 md:mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-black text-sm md:text-base mb-0.5 md:mb-1">25+ Years Experience</h4>
+                  <h4 className="font-semibold text-black text-sm md:text-base mb-0.5 md:mb-1">25+ Years of Experience</h4>
                   <p className="hidden md:block text-sm text-gray-600">Decades of trusted dental excellence</p>
                 </div>
               </div>
@@ -204,8 +204,14 @@ const HeroSection = () => {
                     type="submit"
                     className="w-full bg-[#D3BEA2] text-black px-6 py-2.5 rounded-lg font-semibold hover:bg-[#c4ad8f] transition-colors text-sm"
                   >
-                    Schedule Appointment
+                    Schedule An Appointment
                   </button>
+                  <p className="text-xs text-gray-500 text-center mt-2 flex items-center justify-center">
+                    <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                    </svg>
+                    Your information is secure.
+                  </p>
                 </form>
               </div>
             </div>

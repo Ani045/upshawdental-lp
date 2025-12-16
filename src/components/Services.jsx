@@ -13,17 +13,17 @@ const Services = () => {
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796218/Gemini_Generated_Image_ctx6p5ctx6p5ctx6_lhbmto.png',
       title: 'Preventive Dentistry',
-      description: 'Exams, cleanings, periodontal therapy, custom mouthguards'
+      description: 'Exams, cleanings, periodontal therapy, and custom mouthguards'
     },
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796712/Gemini_Generated_Image_ovo28wovo28wovo2_voj0ge.png',
       title: 'Restorative Dentistry',
-      description: 'Repairs, crowns, bridges'
+      description: 'Repairs, crowns, and bridges'
     },
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796383/Gemini_Generated_Image_5vgxi85vgxi85vgx_bscpqw.png',
       title: 'Cosmetic Dentistry',
-      description: 'Smile makeovers & enhancements'
+      description: 'Smile makeovers and enhancements'
     },
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796724/dental-implants_pkzc1t.jpg',

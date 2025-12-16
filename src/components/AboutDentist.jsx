@@ -70,19 +70,17 @@ const AboutDentist = () => {
               <h3 className="text-2xl font-semibold text-black">
                 Dr. Maria A. Upshaw, DMD
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Dr. Maria Upshaw brings over 25 years of experience in comprehensive and cosmetic dentistry. She's dedicated to providing gentle, personalized dental care while creating a relaxed, welcoming environment for every patient.
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Dr. Maria Upshaw brings over 25 years of experience in comprehensive and cosmetic dentistry. She is dedicated to providing gentle, personalized dental care while creating a relaxed, welcoming environment for every patient.
+
               </p>
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  At Upshaw Dental Studio, our primary goal as your dental home in South Tampa is to prioritize your comfort and needs. We understand that visiting the dentist can be intimidating, and that's why we make it a priority to create a relaxed and welcoming environment.
+                <p>At Upshaw Dental Studio, our primary goal as your dental studio in South Tampa is to prioritize your needs and comfort. We understand that visiting the dentist can be intimidating, which is why we make it a priority to create a calm, welcoming environment.
                 </p>
-                <p>
-                  From the moment you arrive, our friendly team will be there to greet you and guide you through your dental journey. We want to ensure that your visit is as comfortable and enjoyable as possible, putting any worries or fears at ease.
+                <p>From the moment you arrive, our friendly team will be there to greet you and guide you through your dental journey. We want to ensure that your visit is as comfortable and enjoyable as possible, easing any worries or fears.
                 </p>
-                <p>
-                  We believe that each patient is unique and deserves personalized attention and care. Our team takes the time to listen to your concerns, understand your dental goals, and develop customized treatment plans tailored to your specific needs. Whether you require routine preventive care, restorative treatments, cosmetic enhancements, or specialized dental procedures, we have the expertise and technology to provide the highest quality of care.
+                <p>We believe that each patient is unique and deserves personalized attention and care. Our team takes the time to listen to your concerns, understand your dental goals, and develop a customized treatment plan tailored to your specific needs. Whether you require routine preventive care, restorative treatments, cosmetic enhancements, or specialized dental procedures, we have the expertise and technology to provide the highest quality of care.
                 </p>
               </div>
             </div>

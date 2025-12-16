@@ -32,7 +32,7 @@ const ContactSection = () => {
           >
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <h3 className="text-2xl font-semibold text-black mb-6">Contact Details</h3>
-              
+
               <div className="space-y-12">
                 <div className="flex items-start space-x-4">
                   <div className="w-14 h-14 bg-[#D3BEA2] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -73,7 +73,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-           
+
           </div>
 
           {/* Google Maps */}
@@ -84,15 +84,15 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white p-4 rounded-xl shadow-lg"
           >
-            <h3 className="text-2xl font-semibold text-black mb-6">Find Us</h3>
+            <h3 className="text-2xl font-semibold text-black mb-6">Visit our South Tampa studio</h3>
             <div className="w-full h-96 rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28199.760503766258!2d-82.493656!3d27.933563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c32b113720e1%3A0xbdb2dbdcb3163786!2sUpshaw%20Dental%20Studio!5e0!3m2!1sen!2sph!4v1765800666855!5m2!1sen!2sph" 
-                width="100%" 
-                height="100%" 
-                style={{border: 0}} 
-                allowFullScreen="" 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28199.760503766258!2d-82.493656!3d27.933563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c32b113720e1%3A0xbdb2dbdcb3163786!2sUpshaw%20Dental%20Studio!5e0!3m2!1sen!2sph!4v1765800666855!5m2!1sen!2sph"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Upshaw Dental Studio Location"
               ></iframe>
