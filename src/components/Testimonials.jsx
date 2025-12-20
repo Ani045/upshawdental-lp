@@ -48,7 +48,7 @@ const Testimonials = () => {
       title: 'Dental Implants'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692adc21b875fc9ea48f6436_cosmetic-dentistry.png',
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692ec8655e5dd1afc687f445_cosmetic-p-1080.png',
       title: 'Cosmetic Work'
     }
   ];

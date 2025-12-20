@@ -31,9 +31,9 @@ const Services = () => {
       description: 'Permanent tooth replacement'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796832/Gemini_Generated_Image_kcyfjbkcyfjbkcyf_hxlc5l.png',
-      title: 'Root Canals',
-      description: 'Tooth preservation with gentle care'
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a517_AdobeStock_239374670.webp',
+      title: 'Crowns',
+      description: 'Durable and natural-looking tooth restoration'
     },
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a55d_AdobeStock_500193738.webp',
@@ -60,14 +60,10 @@ const Services = () => {
       title: 'Invisalign®',
       description: 'Clear aligner orthodontics'
     },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a567_AdobeStock_220973369.webp',
-      title: 'Botox Treatments',
-      description: 'Aesthetic facial rejuvenation'
-    },
+    
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797512/tmj-orofacial-pain_hhdorh.jpg',
-      title: 'TMJ Therapy',
+      title: 'TMJ Treatment',
       description: 'Relief for jaw pain and dysfunction'
     },
     {
@@ -79,6 +75,16 @@ const Services = () => {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797608/teeth-whitening_zzwlp2.jpg',
       title: 'Teeth Whitening',
       description: 'Professional brightening treatments'
+    },
+    {
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a567_AdobeStock_220973369.webp',
+      title: 'Botox Treatments',
+      description: 'Refresh & Rejuvenate'
+    },
+    {
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/67aa3c26f96ec6fbef81bd32_enhancement_398202860.jpg',
+      title: 'Endymed',
+      description: 'Advanced Facial rejuvenation'
     }
   ];
 
@@ -224,14 +230,14 @@ const Services = () => {
           className="text-center mt-8 p-4 bg-[#D3BEA2] rounded-xl"
         >
           <p className="text-lg text-black mb-4">
-            👉 Not sure which service you need?
+             Not sure which service you need?
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <button
               onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-black text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
             >
-              Book An Consultation
+              Book A Consultation
             </button>
             <a
               href="tel:813-582-4006"

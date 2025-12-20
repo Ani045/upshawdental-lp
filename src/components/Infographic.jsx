@@ -4,28 +4,24 @@ import React from 'react';
 const Infographic = () => {
   const stats = [
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765795784/Gemini_Generated_Image_3m90rw3m90rw3m90_vmkf0s.png',
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a634_FotoBoho_023.webp',
       number: '5000+',
-      label: 'Happy Patients',
-      description: 'Trusted families'
+      label: 'Happy Patients'
     },
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a61f_FotoBoho_003.webp',
       number: '25+',
-      label: 'Years Experience',
-      description: 'Expert dental care'
+      label: 'Years Experience'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765795294/Gemini_Generated_Image_wf4373wf4373wf43_ifapak.png',
-      number: '24/7',
-      label: 'Emergency Care',
-      description: 'Always available'
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a625_FotoBoho_128.webp',
+      number: 'Same-Day',
+      label: 'Emergency Appointment'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765795294/Gemini_Generated_Image_h5iq6ih5iq6ih5iq_modhjs.png',
-      number: '99%',
-      label: 'Satisfaction Rate',
-      description: 'Outstanding results'
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/67aa3c486f63cd7f2b551bea_safe-solutions_490103967.jpg',
+      number: 'Highly Rated',
+      label: 'by Patients'
     }
   ];
 
@@ -64,9 +60,8 @@ const Infographic = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                  <div className="text-3xl font-bold mb-1">{stat.number}</div>
-                  <div className="text-lg font-semibold mb-1">{stat.label}</div>
-                  <p className="text-sm opacity-90">{stat.description}</p>
+                  <div className="text-2xl font-bold mb-1">{stat.number}</div>
+                  <div className="text-base font-semibold">{stat.label}</div>
                 </div>
               </div>
             </div>

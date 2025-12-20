@@ -79,14 +79,14 @@ const WhyChooseUs = () => {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a621_FotoBoho_104.webp"
               alt="Professional dental equipment"
               className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a635_FotoBoho_054.webp"
               alt="Comfortable patient treatment room"
               className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
             />
