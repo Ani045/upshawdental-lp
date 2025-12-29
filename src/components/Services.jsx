@@ -30,30 +30,38 @@ const Services = () => {
       title: 'Dental Implants',
       description: 'Permanent tooth replacement'
     },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a517_AdobeStock_239374670.webp',
-      title: 'Crowns',
-      description: 'Durable and natural-looking tooth restoration'
+     {
+      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797608/teeth-whitening_zzwlp2.jpg',
+      title: 'Teeth Whitening',
+      description: 'Professional brightening treatments'
     },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a55d_AdobeStock_500193738.webp',
-      title: 'Sedation Dentistry',
-      description: 'Comfortable procedures with sedation options'
-    },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a535_AdobeStock_507989992.webp',
-      title: 'Emergency Dentistry',
-      description: 'Same-day urgent care'
-    },
-    {
+      {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a530_AdobeStock_126371120.webp',
       title: 'Veneers',
       description: 'Custom cosmetic veneers'
     },
     {
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a517_AdobeStock_239374670.webp',
+      title: 'Crowns',
+      description: 'Durable and natural-looking tooth restoration'
+    },
+   
+   
+    {
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a535_AdobeStock_507989992.webp',
+      title: 'Emergency Dentistry',
+      description: 'Same-day urgent care'
+    },
+   
+    {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a52b_AdobeStock_298746307.webp',
       title: 'Tooth Extractions',
       description: 'Safe and comfortable extractions'
+    },
+     {
+      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a55d_AdobeStock_500193738.webp',
+      title: 'Sedation Dentistry',
+      description: 'Comfortable procedures with sedation options'
     },
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797381/invisible-aligners_gkpac5.jpg',
@@ -71,11 +79,7 @@ const Services = () => {
       title: 'Sleep Apnea Solutions',
       description: 'Better sleep through dental care'
     },
-    {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797608/teeth-whitening_zzwlp2.jpg',
-      title: 'Teeth Whitening',
-      description: 'Professional brightening treatments'
-    },
+   
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a567_AdobeStock_220973369.webp',
       title: 'Botox Treatments',
