@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-12">
-        
+
           <h2 className="text-4xl font-bold text-black mb-4">
             What Makes Us Different
           </h2>
@@ -106,7 +106,7 @@ const WhyChooseUs = () => {
               onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors text-lg"
             >
-              Book Your Appointment
+              Schedule Your Consultation
             </button>
           </div>
         </div>

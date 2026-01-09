@@ -62,7 +62,7 @@ const SmilesBanner = () => {
             onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors text-lg"
           >
-            Join Our Happy Patients Today
+            Schedule Your Complimentary Consultation
           </button>
         </div>
       </div>

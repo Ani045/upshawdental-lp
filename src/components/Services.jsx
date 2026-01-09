@@ -30,12 +30,12 @@ const Services = () => {
       title: 'Dental Implants',
       description: 'Permanent tooth replacement'
     },
-     {
+    {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797608/teeth-whitening_zzwlp2.jpg',
       title: 'Teeth Whitening',
       description: 'Professional brightening treatments'
     },
-      {
+    {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a530_AdobeStock_126371120.webp',
       title: 'Veneers',
       description: 'Custom cosmetic veneers'
@@ -45,20 +45,20 @@ const Services = () => {
       title: 'Crowns',
       description: 'Durable and natural-looking tooth restoration'
     },
-   
-   
+
+
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a535_AdobeStock_507989992.webp',
       title: 'Emergency Dentistry',
       description: 'Same-day urgent care'
     },
-   
+
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a52b_AdobeStock_298746307.webp',
       title: 'Tooth Extractions',
       description: 'Safe and comfortable extractions'
     },
-     {
+    {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a55d_AdobeStock_500193738.webp',
       title: 'Sedation Dentistry',
       description: 'Comfortable procedures with sedation options'
@@ -68,7 +68,7 @@ const Services = () => {
       title: 'Invisalign®',
       description: 'Clear aligner orthodontics'
     },
-    
+
     {
       image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797512/tmj-orofacial-pain_hhdorh.jpg',
       title: 'TMJ Treatment',
@@ -79,7 +79,7 @@ const Services = () => {
       title: 'Sleep Apnea Solutions',
       description: 'Better sleep through dental care'
     },
-   
+
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a567_AdobeStock_220973369.webp',
       title: 'Botox Treatments',
@@ -234,14 +234,14 @@ const Services = () => {
           className="text-center mt-8 p-4 bg-[#D3BEA2] rounded-xl"
         >
           <p className="text-lg text-black mb-4">
-             Not sure which service you need?
+            Not sure which service you need?
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <button
               onClick={() => document.querySelector('#home .bg-white.p-6')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-black text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
             >
-              Book A Consultation
+              Book Your Complimentary Consultation
             </button>
             <a
               href="tel:813-582-4006"

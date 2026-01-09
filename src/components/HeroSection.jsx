@@ -97,7 +97,7 @@ const HeroSection = () => {
                 className="inline-flex items-center space-x-3 bg-[#D3BEA2] text-black px-8 py-4 rounded-lg font-semibold hover:bg-[#c4ad8f] transition-colors text-lg"
               >
                 <SafeIcon icon={FiPhone} className="w-5 h-5" />
-                <span>Call Now - 813-582-4006</span>
+                <span>Call 813-582-4006</span>
               </a>
             </div>
           </div>
