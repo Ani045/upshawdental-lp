@@ -87,8 +87,13 @@ const Services = () => {
     },
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/67aa3c26f96ec6fbef81bd32_enhancement_398202860.jpg',
-      title: 'Endymed',
+      title: 'Skin Rejuvination',
       description: 'Advanced Facial rejuvenation'
+    },
+    {
+      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797512/tmj-orofacial-pain_hhdorh.jpg',
+      title: 'TMJ',
+      description: 'Therapeutic treatment for jaw pain'
     }
   ];
 
@@ -138,7 +143,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
-              className="rounded-xl hover:shadow-md transition-all duration-300 border border-[#D1C4B2]/30 overflow-hidden group hover:border-[#D1C4B2] bg-white"
+              className={`rounded-xl hover:shadow-md transition-all duration-300 border border-[#D1C4B2]/30 overflow-hidden group hover:border-[#D1C4B2] bg-white ${index === 15 ? 'md:col-start-2' : ''}`}
             >
               <div className="flex items-center p-3">
                 <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 mr-4 group-hover:scale-105 transition-transform duration-300">

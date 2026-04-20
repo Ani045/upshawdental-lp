@@ -1,6 +1,7 @@
 import React from 'react';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
+import heroBanner from '../assets/heroBanner.jpg';
 
 const { FiPhone, FiHeart, FiSettings, FiShield, FiClock } = FiIcons;
 
@@ -112,7 +113,7 @@ const HeroSection = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a61f_FotoBoho_003.webp"
+                  src={heroBanner}
                   alt="Upshaw Dental Studio interior"
                   className="w-full h-72 object-cover"
                 />

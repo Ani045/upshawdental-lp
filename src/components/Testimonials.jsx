@@ -39,10 +39,7 @@ const Testimonials = () => {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692adc21157b842ff1d6c56f_restorative-dentistry.png',
       title: 'Preventative Dentistry'
     },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692ec8646394b9b73972cf54_extraction-p-1080.png',
-      title: 'Tooth Extraction'
-    },
+
     {
       image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692ec865453c7be79f9e646e_implants-p-1080.png',
       title: 'Dental Implants'
@@ -183,9 +180,9 @@ const Testimonials = () => {
           <h3 className="text-2xl font-bold text-black mb-8">See Our Treatment Results</h3>
 
           {/* Desktop Grid */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="hidden md:flex flex-wrap justify-center gap-6">
             {treatmentResults.map((result, index) => (
-              <div key={index} className="relative rounded-xl overflow-hidden shadow-lg group">
+              <div key={index} className="relative rounded-xl overflow-hidden shadow-lg group w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
                 <img
                   src={result.image}
                   alt={result.title}
