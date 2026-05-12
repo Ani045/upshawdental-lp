@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import chippedTooth from '../assets/BeforeAfter/chipped-tooth.png';
+import porcelainCrowns from '../assets/BeforeAfter/porcelain-crowns.png';
+import porcelainVeneers from '../assets/BeforeAfter/porcelain-veneers.png';
+import space from '../assets/BeforeAfter/space.png';
+import whitening from '../assets/BeforeAfter/whitening.png';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
@@ -27,27 +32,11 @@ const Testimonials = () => {
   ];
 
   const treatmentResults = [
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692adc21f3ad2a8641c86d09_teeth-whitening.png',
-      title: 'Teeth Whitening'
-    },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692ec865cc7d86edfc8fc637_invisalign-p-1080.png',
-      title: 'Invisalign'
-    },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692adc21157b842ff1d6c56f_restorative-dentistry.png',
-      title: 'Preventative Dentistry'
-    },
-
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692ec865453c7be79f9e646e_implants-p-1080.png',
-      title: 'Dental Implants'
-    },
-    {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/692ec8655e5dd1afc687f445_cosmetic-p-1080.png',
-      title: 'Cosmetic Work'
-    }
+    { image: chippedTooth },
+    { image: porcelainCrowns },
+    { image: porcelainVeneers },
+    { image: space },
+    { image: whitening }
   ];
 
   const nextSlide = () => {
@@ -182,15 +171,12 @@ const Testimonials = () => {
           {/* Desktop Grid */}
           <div className="hidden md:flex flex-wrap justify-center gap-6">
             {treatmentResults.map((result, index) => (
-              <div key={index} className="relative rounded-xl overflow-hidden shadow-lg group w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+              <div key={index} className="relative rounded-xl overflow-hidden shadow-lg group w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white border border-gray-100 p-1">
                 <img
                   src={result.image}
-                  alt={result.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  alt="Treatment Result"
+                  className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/95 px-3 py-2 rounded-lg shadow-md">
-                  <span className="text-sm font-semibold text-black">{result.title}</span>
-                </div>
               </div>
             ))}
           </div>
@@ -204,15 +190,12 @@ const Testimonials = () => {
               >
                 {treatmentResults.map((result, index) => (
                   <div key={index} className="w-full flex-shrink-0">
-                    <div className="relative rounded-xl overflow-hidden shadow-lg mx-4">
+                    <div className="relative rounded-xl overflow-hidden shadow-lg mx-4 bg-white border border-gray-100 p-1">
                       <img
                         src={result.image}
-                        alt={result.title}
-                        className="w-full h-64 object-cover"
+                        alt="Treatment Result"
+                        className="w-full h-auto object-contain"
                       />
-                      <div className="absolute bottom-4 left-4 bg-white/95 px-3 py-2 rounded-lg shadow-md">
-                        <span className="text-sm font-semibold text-black">{result.title}</span>
-                      </div>
                     </div>
                   </div>
                 ))}

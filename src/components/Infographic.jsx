@@ -1,25 +1,28 @@
-// Infographic component
 import React from 'react';
+import happyPatientsImg from '../assets/stat-happy-patients.webp';
+import experienceImg from '../assets/stat-experience.webp';
+import emergencyImg from '../assets/stat-emergency.webp';
+import ratedImg from '../assets/stat-rated.jpg';
 
 const Infographic = () => {
   const stats = [
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a634_FotoBoho_023.webp',
+      image: happyPatientsImg,
       number: '5000+',
       label: 'Happy Patients'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a61f_FotoBoho_003.webp',
+      image: experienceImg,
       number: '25+',
       label: 'Years Experience'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a625_FotoBoho_128.webp',
+      image: emergencyImg,
       number: 'Same-Day',
       label: 'Emergency Appointment'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/67aa3c486f63cd7f2b551bea_safe-solutions_490103967.jpg',
+      image: ratedImg,
       number: 'Highly Rated',
       label: 'by Patients'
     }

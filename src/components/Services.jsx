@@ -2,6 +2,22 @@ import { useState, useEffect } from 'react';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
+import preventiveGenImg from '../assets/service-preventive-gen.png';
+import restorativeGenImg from '../assets/service-restorative-gen.png';
+import cosmeticGenImg from '../assets/service-cosmetic-gen.png';
+import implantsGenImg from '../assets/service-implants-gen.jpg';
+import whiteningGenImg from '../assets/service-whitening-gen.jpg';
+import veneersImg from '../assets/service-general.webp';
+import crownsImg from '../assets/service-cosmetic.webp';
+import emergencyImg from '../assets/service-restorative.webp';
+import extractionsImg from '../assets/service-orthodontics.webp';
+import sedationImg from '../assets/service-implants.webp';
+import invisalignGenImg from '../assets/service-invisalign-gen.jpg';
+import tmjGenImg from '../assets/service-tmj-gen.jpg';
+import sleepApneaImg from '../assets/service-preventative.webp';
+import botoxImg from '../assets/service-pediatric.webp';
+import skinImg from '../assets/service-enhancement.jpg';
+
 const { FiChevronLeft, FiChevronRight } = FiIcons;
 
 const Services = () => {
@@ -11,87 +27,82 @@ const Services = () => {
 
   const services = [
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796218/Gemini_Generated_Image_ctx6p5ctx6p5ctx6_lhbmto.png',
+      image: preventiveGenImg,
       title: 'Preventive Dentistry',
       description: 'Exams, cleanings, periodontal therapy, and custom mouthguards'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796712/Gemini_Generated_Image_ovo28wovo28wovo2_voj0ge.png',
+      image: restorativeGenImg,
       title: 'Restorative Dentistry',
       description: 'Repairs, crowns, and bridges'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796383/Gemini_Generated_Image_5vgxi85vgxi85vgx_bscpqw.png',
+      image: cosmeticGenImg,
       title: 'Cosmetic Dentistry',
       description: 'Smile makeovers and enhancements'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765796724/dental-implants_pkzc1t.jpg',
+      image: implantsGenImg,
       title: 'Dental Implants',
       description: 'Permanent tooth replacement'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797608/teeth-whitening_zzwlp2.jpg',
+      image: whiteningGenImg,
       title: 'Teeth Whitening',
       description: 'Professional brightening treatments'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a530_AdobeStock_126371120.webp',
+      image: veneersImg,
       title: 'Veneers',
       description: 'Custom cosmetic veneers'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a517_AdobeStock_239374670.webp',
+      image: crownsImg,
       title: 'Crowns',
       description: 'Durable and natural-looking tooth restoration'
     },
-
-
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a535_AdobeStock_507989992.webp',
+      image: emergencyImg,
       title: 'Emergency Dentistry',
       description: 'Same-day urgent care'
     },
-
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a52b_AdobeStock_298746307.webp',
+      image: extractionsImg,
       title: 'Tooth Extractions',
       description: 'Safe and comfortable extractions'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a55d_AdobeStock_500193738.webp',
+      image: sedationImg,
       title: 'Sedation Dentistry',
       description: 'Comfortable procedures with sedation options'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797381/invisible-aligners_gkpac5.jpg',
+      image: invisalignGenImg,
       title: 'Invisalign®',
       description: 'Clear aligner orthodontics'
     },
-
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797512/tmj-orofacial-pain_hhdorh.jpg',
+      image: tmjGenImg,
       title: 'TMJ Treatment',
       description: 'Relief for jaw pain and dysfunction'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a5b1_AdobeStock_407976541.webp',
+      image: sleepApneaImg,
       title: 'Sleep Apnea Solutions',
       description: 'Better sleep through dental care'
     },
-
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a567_AdobeStock_220973369.webp',
+      image: botoxImg,
       title: 'Botox Treatments',
       description: 'Refresh & Rejuvenate'
     },
     {
-      image: 'https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/67aa3c26f96ec6fbef81bd32_enhancement_398202860.jpg',
+      image: skinImg,
       title: 'Skin Rejuvination',
       description: 'Advanced Facial rejuvenation'
     },
     {
-      image: 'https://res.cloudinary.com/damfndmrm/image/upload/v1765797512/tmj-orofacial-pain_hhdorh.jpg',
+      image: tmjGenImg,
       title: 'TMJ',
       description: 'Therapeutic treatment for jaw pain'
     }

@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
+import whyUs1Img from '../assets/why-us-1.webp';
+import whyUs2Img from '../assets/why-us-2.webp';
+import whyUs3Img from '../assets/why-us-3.webp';
 
 const { FiHeart, FiSettings, FiShield } = FiIcons;
 
@@ -72,21 +75,21 @@ const WhyChooseUs = () => {
         >
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a5dd_upshaw-dental-studio-23.webp"
+              src={whyUs1Img}
               alt="Modern dental office reception area"
               className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a621_FotoBoho_104.webp"
+              src={whyUs2Img}
               alt="Professional dental equipment"
               className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a635_FotoBoho_054.webp"
+              src={whyUs3Img}
               alt="Comfortable patient treatment room"
               className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
             />

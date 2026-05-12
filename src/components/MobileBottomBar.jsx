@@ -10,6 +10,13 @@ const MobileBottomBar = () => {
     if (heroForm) {
       heroForm.scrollIntoView({ behavior: 'smooth' });
     }
+    
+    // Google Ads Conversion tracking
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18075350064/NQRtCMq8rqccELDo_6pD'
+      });
+    }
   };
 
   return (

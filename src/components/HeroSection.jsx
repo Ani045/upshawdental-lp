@@ -7,7 +7,7 @@ const { FiPhone, FiHeart, FiSettings, FiShield, FiClock } = FiIcons;
 
 const HeroSection = () => {
   return (
-    <section id="home" className="pt-6  bg-white relative overflow-hidden">
+    <section id="home" className="pt-24 md:pt-32 bg-white relative overflow-hidden">
       {/* Background Decorative Elements */}
       {/* <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-32 h-32 bg-[#D3BEA2] rounded-full opacity-10"></div>
@@ -137,7 +137,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+              <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 scroll-mt-28">
                 <div className="mb-4">
                   <h3 className="text-lg font-bold text-black mb-1">Schedule Your Visit</h3>
                   <p className="text-xs text-gray-600">Get started with exceptional dental care</p>
@@ -201,8 +201,16 @@ const HeroSection = () => {
                       placeholder="Tell us about your dental needs..."
                     ></textarea>
                   </div>
+
                   <button
                     type="submit"
+                    onClick={() => {
+                      if (typeof window.gtag === 'function') {
+                        window.gtag('event', 'conversion', {
+                          'send_to': 'AW-18075350064/NQRtCMq8rqccELDo_6pD'
+                        });
+                      }
+                    }}
                     className="w-full bg-[#D3BEA2] text-black px-6 py-2.5 rounded-lg font-semibold hover:bg-[#c4ad8f] transition-colors text-sm"
                   >
                     Schedule An Appointment

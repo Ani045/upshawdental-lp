@@ -1,25 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import drMariaImg from '../assets/dr-maria-upshaw.webp';
 
 const AboutDentist = () => {
   return (
     <section id="about" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12">
-
+          className="text-center mb-12"
+        >
           <h2 className="text-4xl font-bold text-black mb-4">
             Meet Dr. Maria Upshaw
           </h2>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <div
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -28,15 +29,15 @@ const AboutDentist = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://cdn.prod.website-files.com/65773589c411ef66c988a4f9/65773589c411ef66c988a5b3_Dr-Maria-Upshaw-075.webp"
+                  src={drMariaImg}
                   alt="Dr. Maria Upshaw, DMD - Professional dental portrait"
                   className="w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
               </div>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -56,10 +57,10 @@ const AboutDentist = () => {
                   className="rounded-2xl"
                 ></iframe>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -72,16 +73,12 @@ const AboutDentist = () => {
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Dr. Maria Upshaw brings over 25 years of experience in comprehensive and cosmetic dentistry. She is dedicated to providing gentle, personalized dental care while creating a relaxed, welcoming environment for every patient.
-
               </p>
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>At Upshaw Dental Studio, our primary goal as your dental studio in South Tampa is to prioritize your needs and comfort. We understand that visiting the dentist can be intimidating, which is why we make it a priority to create a calm, welcoming environment.
-                </p>
-                <p>From the moment you arrive, our friendly team will be there to greet you and guide you through your dental journey. We want to ensure that your visit is as comfortable and enjoyable as possible, easing any worries or fears.
-                </p>
-                <p>We believe that each patient is unique and deserves personalized attention and care. Our team takes the time to listen to your concerns, understand your dental goals, and develop a customized treatment plan tailored to your specific needs. Whether you require routine preventive care, restorative treatments, cosmetic enhancements, or specialized dental procedures, we have the expertise and technology to provide the highest quality of care.
-                </p>
+                <p>At Upshaw Dental Studio, our primary goal as your dental studio in South Tampa is to prioritize your needs and comfort. We understand that visiting the dentist can be intimidating, which is why we make it a priority to create a calm, welcoming environment.</p>
+                <p>From the moment you arrive, our friendly team will be there to greet you and guide you through your dental journey. We want to ensure that your visit is as comfortable and enjoyable as possible, easing any worries or fears.</p>
+                <p>We believe that each patient is unique and deserves personalized attention and care. Our team takes the time to listen to your concerns, understand your dental goals, and develop a customized treatment plan tailored to your specific needs. Whether you require routine preventive care, restorative treatments, cosmetic enhancements, or specialized dental procedures, we have the expertise and technology to provide the highest quality of care.</p>
               </div>
             </div>
 
@@ -105,7 +102,7 @@ const AboutDentist = () => {
                 Schedule Your Consultation
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
